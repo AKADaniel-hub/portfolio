@@ -8,7 +8,8 @@ class LicenciaturaAdmin(admin.ModelAdmin):
 
 @admin.register(Docente)
 class DocenteAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('nome', 'email')
+    search_fields = ('nome', 'email')
 
 @admin.register(Tecnologia)
 class TecnologiaAdmin(admin.ModelAdmin):
