@@ -24,8 +24,8 @@ def get_or_create_tecnologia(nome):
             'tipo': 'outro',
             'descricao': '',
             'url_website': '',
-            'nivel_interesse': 3,   # ← obrigatório no teu modelo
-            'ano_inicio': 2024,     # ← obrigatório no teu modelo
+            'nivel_interesse': 3,   
+            'ano_inicio': 2024,    
             'em_uso': True,
         }
     )
@@ -77,7 +77,7 @@ def load_tfcs():
             'ano':            0,
             'autor':          entry.get('autor', '') or '',
             'orientador':     entry.get('orientador', '') or '',
-            'licenciatura':   lic,                              # ← adiciona
+            'licenciatura':   lic,                            
             'pdf':            entry.get('pdf', '') or '',
             'imagem':         entry.get('imagem', '') or '',
             'resumo':         entry.get('resumo', '') or '',
