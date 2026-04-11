@@ -1,0 +1,263 @@
+[
+    {
+        "titulo": "Lançamento do Projétil",
+        "uc": "Fundamentos de Física (1A/1S, LEI, LEIRT)",
+        "descricao": "O programa pede a altura, a velocidade inicial e o ângulo. Temos o output de um gráfico do trajeto do projétil consoante os inputs inseridos Podemos repetir o programa o quanto desejarmos.",
+        "conceitos_aplicados": "Referencial, posição e trajetória. Movimento no espaço. Projéteis Programação em Kotlin: leitura do teclado, escrita no ecrã.",
+        "tecnologias": [
+            "Kotlin"
+        ],
+        "video_demo": "https://www.youtube.com/watch?v=1fk8l_IUJxM"
+    },
+    {
+        "titulo": "Jogo das Tendas",
+        "uc": "Fundamentos de Programação (1A/1S, LEI, LIG, LEIRT, LCD, LCMA)",
+        "descricao": "Desenvolver uma grelha 2D que simule o terreno do jogo, com árvores distribuídas aleatoriamente. Permitir que o jogador coloque tendas junto às árvores, assegurando que cada tenda esteja ligada apenas a uma árvore. Implementar regras para assegurar que as tendas não se toquem, nem mesmo na diagonal, e criar uma interface de linha de comando para a interação do jogador com o jogo.",
+        "conceitos_aplicados": "Programação em Kotlin: ciclos, funções, arrays, arrays2D, leitura do teclado, escrita no ecrã.",
+        "tecnologias": [
+            "Kotlin",
+            "IntelliJ"
+        ],
+        "video_demo": ""
+    },
+    {
+        "titulo": "Fórum no Moodle – discussão & partilha",
+        "uc": "Teoria e Prática de Marketing (1A/1S, LIG)",
+        "descricao": "Implementação e dinamização do módulo de fórum no Moodle para facilitar a discussão e partilha de conhecimentos relacionados com a unidade curricular. O projeto visa a interatividade dos estudantes através da criação, comentário e partilha de tópicos de discussão sobre Marketing e áreas conexas, utilizando o Moodle como plataforma de ensino à distância.",
+        "conceitos_aplicados": "Pesquisa de informação e identificação de tendências Abordagem a novas tecnologias usadas no Marketing Relevância da Inteligência Artificial no Marketing Digital",
+        "tecnologias": [
+            "Moodle"
+        ],
+        "video_demo": ""
+    },
+    {
+        "titulo": "Batalha Naval",
+        "uc": "Fundamentos de Programação (1A/1S, LEI, LIG, LEIRT, LCD, LCMA)",
+        "descricao": "Desenvolver uma grelha 2D que simule a arena do jogo, com navios e marcadores de jogadas anteriores. Criar uma interface de linha de comando para a interação do jogador com o jogo.",
+        "conceitos_aplicados": "Programação em Kotlin: ciclos, funções, arrays, arrays2D, leitura do teclado, escrita no ecrã.",
+        "tecnologias": [
+            "Kotlin",
+            "IntelliJ"
+        ],
+        "video_demo": "https://www.youtube.com/watch?v=CYT0lOyQrro"
+    },
+    {
+        "titulo": "Transmissão AM e FM",
+        "uc": "Fundamentos de Electrónica (1A/2S, LEIRT)",
+        "descricao": "Estudo e implementação de esquemas de transmissão AM e FM Aplicação dos conceitos de análise de componentes e de teoria de circuitos.",
+        "conceitos_aplicados": "Tópicos de análise de teoria de circuitos.",
+        "tecnologias": [
+            "Multisim, software de simulação de circuitos eletrónicos e análise SPICE (Simulation Program with Integrated Circuit Emphasis)"
+        ],
+        "video_demo": "https://www.youtube.com/watch?v=-VA9xwwORqo"
+    },
+    {
+        "titulo": "Rock in DEISI",
+        "uc": "Algoritmia e Estruturas de Dados (1A/2S, LEI, LIG, LEIRT)",
+        "descricao": "Desenvolver uma aplicação de linhas de comando em Java que permite realizar queries relativamente sofisticadas sobre uma base de dados real contendo informações sobre músicas e artistas dos últimos 100 anos, obtidas de repositórios públicos. A base de dados é representada em ficheiros CSV e os alunos devem implementar estruturas de dados em memória para responder às queries eficientemente.",
+        "conceitos_aplicados": "Algoritmos de ordenação e pesquisa Estruturas de dados otimizadas para pesquisa como árvores e hashtables Deteção de bottlenecks Utilização de otimizações não-algorítmicas como buffering",
+        "tecnologias": [
+            "Java",
+            "ntelliJ",
+            "JUnit",
+            "ChatGPT"
+        ],
+        "video_demo": ""
+    },
+    {
+        "titulo": "IT in competences development",
+        "uc": "Competências Comportamentais (1A/2S, LEI, LIG)",
+        "descricao": "Desenvolvimento de competências via projetos tecnológicos (apps, jogos, websites), incluindo análise de mercado e estratégias de monetização. Apresentação de 10 minutos para captação de investimento, seguida de avaliação pelos pares.",
+        "conceitos_aplicados": "Critical Thinking, apresentações públicas, personal marketing e desenvolvimento de competências.",
+        "tecnologias": [
+            "Diversas. Ficou ao critério dos alunos a definição dos pressupostos técnicos, não havendo limitações"
+        ],
+        "video_demo": ""
+    },
+    {
+        "titulo": "DEISI Jungle",
+        "uc": "Linguagens de Programação II (2A/1S, LEI, LEIRT)",
+        "descricao": "Desenvolver em Java uma aplicação gráfica (desktop) para um jogo de tabuleiro com animais, que envolve estratégia e movimentação baseada em características animais e alimentares O jogo suporta até 4 jogadores, cada um iniciando com um animal diferente, e inclui elementos como alimentação e energia, influenciando a dinâmica do jogo.",
+        "conceitos_aplicados": "Utilização correta de conceitos de programação orientada a objetos como encapsulamento, herança e polimorfismo. Boas práticas de código e design de software, com expectativa de mais de 3000 linhas de código. Planeamento com UML antes da codificação e uso intensivo de testes unitários em JUnit para garantir qualidade.",
+        "tecnologias": [
+            "Java e Kotlin (os alunos misturaram as duas linguagens no projeto)",
+            "IntelliJ",
+            "Git/GitHub",
+            "JUnit"
+        ],
+        "video_demo": ""
+    },
+    {
+        "titulo": "Deteção e Reconhecimento de Jogos de Xadrez",
+        "uc": "Processamento de Imagem (2A/1S, LEI)",
+        "descricao": "O desafio proposto visa aplicar os conhecimentos adquiridos em contexto de aula a fim de reconhecer tabuleiros de xadrez e as peças que neles constam. A identificação das peças é feita através de uma comparação com recurso a vários tipos de imagens fornecidas pelos docentes. Pretende-se também que sejam combinadas as funções em métodos únicos disponíveis ao utilizador de forma acessível através de uma interface onde são mostradas as imagens bem como a informação resultante das funcionalidades pretendidas.",
+        "conceitos_aplicados": "Processamento de imagens Conversão de RGB para HSV (Hue, Saturation, Value) Deteção e reconhecimento de padrões Filtros de processamento de imagem (Negativo, Média,…) Rotação de imagens e correção de ângulos Comparação pixel a pixel de imagens Tratamento de ruído (remoção de lixo) Ajuste de brilho e contraste Algoritmos de erosão e dilatação",
+        "tecnologias": [
+            "OpenCV",
+            "HSV &amp; RGB (modelo de cor)",
+            "Histogramas",
+            "Binarização",
+            "Funções de recorte e rotação de imagens",
+            "Interface gráfica (GUI) para manipulação de imagens"
+        ],
+        "video_demo": ""
+    },
+    {
+        "titulo": "Casa Inteligente",
+        "uc": "Arquitetura Avançada de Computadores (2A/1S, LEI)",
+        "descricao": "No âmbito da disciplina de arquitetura avançada de computadores decidimos como projeto final criar uma casa inteligente. O objetivo principal era criar um casa para um dia a dia mais pratico e facil. Na nossa casa contamos com um sistema de segurança com fechadura com um código e um sistema de alarme por movimento. Iluminação interior e exterior com sensores para uma eficiência energética melhor. Um sistema de ar condicionado com um display que disponibiliza a temperatura ambiente da casa bem como o estado de funcionamento do ar condicionado. Contamos tambem com uma persiana automática e uma campainha.",
+        "conceitos_aplicados": "Arduino Programação em C",
+        "tecnologias": [
+            "C",
+            "Arduino IDE",
+            "Thinkercad"
+        ],
+        "video_demo": "https://www.youtube.com/watch?v=e7tn1MmF61o"
+    },
+    {
+        "titulo": "Controlo e Gestão de Ginásio",
+        "uc": "Arquitetura Avançada de Computadores (2A/1S, LEI)",
+        "descricao": "Criação de um sistema automatizado com arduinos Há liberdade de escolha do propósito do projeto",
+        "conceitos_aplicados": "Montagem de circuitos eletrónicos com múltiplos sensores Programação em C++",
+        "tecnologias": [
+            "Simulação no Thinkercad",
+            "Arduino Uno R3, ou outro modelo",
+            "Arduino IDE"
+        ],
+        "video_demo": "https://www.youtube.com/watch?v=Qi2JtxXrrzc"
+    },
+    {
+        "titulo": "DEISI Chess",
+        "uc": "Linguagens de Programação II (2A/1S, LEI, LEIRT)",
+        "descricao": "Criação um jogo de Xadrez! Na primeira parte deste projeto os alunos são desafiados a criar a lógica por trás deste jogo, sendo que vão começar apenas a jogar com Reis. Na segunda parte vão ser incorporadas as outras peças de maneira a completar este jogo.",
+        "conceitos_aplicados": "diagramas UML programação orientada a objetos de acordo com o teorema do encapsulamento",
+        "tecnologias": [
+            "linguagens de programação Java e de Kotlin",
+            "testes em JUnit 5",
+            "criação de um repositório Git no GitHub"
+        ],
+        "video_demo": "https://www.youtube.com/watch?v=_DoKjzZGHXQ"
+    },
+    {
+        "titulo": "Modelação, ETL e Reporting",
+        "uc": "Sistemas de Suporte à Decisão (2A/2S, LEI, LIG)",
+        "descricao": "Modelação de uma base de dados relacional transformando-a em um modelo dimensional (estrela) usando o Oracle Data Modeler Implementação de processos ETL para transferência e transformação de dados para um Datawarehouse com o Pentaho Data Integration Criação de relatórios e dashboards analíticos com visualizações interativas utilizando o Power BI Desktop, para facilitar a tomada de decisão baseada em dados",
+        "conceitos_aplicados": "Modelação Dimensional – o modelo em Estrela Extração, transformação e carregamento de dados para um Datawarehouse Análise de dados – Ferramentas de Reporting",
+        "tecnologias": [
+            "Oracle Data Modeler",
+            "Pentaho Data Integration",
+            "Power BI Desktop"
+        ],
+        "video_demo": ""
+    },
+    {
+        "titulo": "Portfolio",
+        "uc": "Programação Web (2A/2S, LEI, LIG)",
+        "descricao": "Criação de aplicação Web com um portfolio. Segue o modelo Model-View-Control. Integra modelação e implementação de uma base de dados, desenvolvimento de toda a lógica de negócio, e criação de interfaces Web. Criação de uma aplicações sobre o curso (com informação das disciplinas e seus conteudos), projetos realizados Criação de um blog, que permite comentários e ratings Interligação com APIs",
+        "conceitos_aplicados": "Model-view-control Framework de desenvolvimento web django, para backend e frontend Modelação de bases de dados Criação de interfaces Web Desenvolvimento de APIs, web scraping e automação Utilização de uma Platform as a Service (PaaS)",
+        "tecnologias": [
+            "Python , Django, Selenium",
+            "MySQL",
+            "HTML, CSS, JavaScript",
+            "GitHub e PythonAnywhere"
+        ],
+        "video_demo": ""
+    },
+    {
+        "titulo": "Rede Nacional da BetaLda",
+        "uc": "Redes de Computadores (2A/2S, LEI, LIG, LEIRT)",
+        "descricao": "O principal objetivo deste projeto é projetar e implementar uma rede de computadores eficiente e segura para a empresa Beta Lda., que possui sede em Lisboa e filiais em várias cidades portuguesas, nomeadamente Porto, Portimão, Setúbal e Coimbra.",
+        "conceitos_aplicados": "Configuração no Packet Tracer: Utilizar o software Cisco Packet Tracer para simular a rede, configurando os dispositivos e serviços conforme os requisitos do projeto. Divisão de Sub-redes e VLANs: Implementar a segmentação da rede através de sub-redes e VLANs, seguindo as regras estabelecidas para endereços IP e IDs de VLANs. Implementação dos Serviços de Rede: Configurar os servidores DNS, DHCP, de ficheiros e backup controlador de domínio, garantindo que todos os serviços estejam operacionais. Configuração do Roteamento: Selecionar e configurar o protocolo de roteamento adequado para assegurar a comunicação eficiente entre as diferentes partes da rede. Testes de Conectividade: Realizar uma série de testes de conectividade para verificar a comunicação entre a sede e as filiais, bem como entre dispositivos dentro das VLANs.",
+        "tecnologias": [
+            "Cisco Packet Tracer"
+        ],
+        "video_demo": ""
+    },
+    {
+        "titulo": "Portfolio",
+        "uc": "Programação Web (2A/2S, LEI, LIG)",
+        "descricao": "Desenvolvimento de um portfólio que apresenta quatro aplicações distintas: uma aplicação com uma listagem de bandas e seus álbuns, uma aplicação de um jornal online, um diretório de um curso com a listagem de projetos e seus componentes relacionados, e uma aplicação de meteorologia. Cada aplicação segue o padrão Model-View-Controller (MVC), integrando modelagem de base de dados, lógica de negócios e interfaces web. O jornal também inclui recursos como comentários e avaliações, a meteorologia a integração com APIs externas para melhorar as funcionalidades da aplicação e todas as aplicações têm em comum a api de autenticação do Google.",
+        "conceitos_aplicados": "Model-view-control Framework de desenvolvimento web django, para backend e frontend Modelação de bases de dados Criação de interfaces Web Desenvolvimento de APIs, web scraping e automação",
+        "tecnologias": [
+            "Python , Django, Selenium",
+            "MySQL",
+            "HTML, CSS, JavaScript, Bootstrap",
+            "GitHub e PythonAnywhere"
+        ],
+        "video_demo": "https://www.youtube.com/watch?v=N-OR2MR_kVA"
+    },
+    {
+        "titulo": "Reporting FoodMart Using PowerBI",
+        "uc": "Sistemas de Suporte à Decisão (2A/2S, LEI, LIG)",
+        "descricao": "Projeto feito em PowerBI, onde temos como objetivo expor informação de uma empresa de alimentação, relativamente a dados estatísticos previamente estruturados.",
+        "conceitos_aplicados": "Reporting Data PowerBI Data Handling",
+        "tecnologias": [
+            "PowerBI"
+        ],
+        "video_demo": ""
+    },
+    {
+        "titulo": "OceanView Seats",
+        "uc": "Computação Distribuída (3A/1S, LEI, LEIRT)",
+        "descricao": "Este projeto consiste no desenvolvimento de um serviço distribuído de reservas de sombrinhas e espreguiçadeiras para praias no Algarve. O sistema permite que os utilizadores realizem várias ações, como por exemplo, listagem de sombrinhas (não reservadas) de uma praia, reserva de sombrinhas e cance- lamento de reservas. O serviço permite ainda registo e autenticação de utilizadores (de forma segura) de modo a que estes consigam fazer a gestão das suas reservas. Todas as operações do serviço são disponibilizadas através de uma User Interface (UI) simples e intuitiva. A arquitetura do sistema destaca-se pela eficiência e modularidade permitindo que este seja facilmente escalável.",
+        "conceitos_aplicados": "Arquiteturas e Modelos de Comunicação Distribuída. Invocação Remota e Objetos Distribuídos. Modelo de execução RPC (Remote Procedure Call). Web Services (WS). Modelo de Execução Web Services (WS). Linguagens de definição de serviços (WSDL). REST (REpresentational State Transfer) e SOAP (Simple Object Access Protocol). Autenticação e controlo de acessos. Segurança. Modelo de segurança. Modelo transacional. Propriedades ACID",
+        "tecnologias": [
+            "Java",
+            "Eclipse IDE/IntelliJ IDEA",
+            "Maven",
+            "Java RMI",
+            "Apache Tomcat",
+            "GitHub",
+            "PostgreSQL (opção do grupo)",
+            "JavaFX (opção do grupo)"
+        ],
+        "video_demo": "https://www.youtube.com/watch?v=Hz9h1NiECjg"
+    },
+    {
+        "titulo": "Cine Cartaz",
+        "uc": "Computação Móvel (3A/2S, LEI, LEIRT)",
+        "descricao": "Desenvolver uma aplicação móvel para Android, usando Kotlin, que permite aos utilizadores registar e avaliar filmes vistos no cinema, obter informações em tempo real através da API OMDb Inclui funcionalidades como validação geográfica, fotografia de cenas, e consulta de histórico de filmes assistidos em diferentes formatos A aplicação suporta funcionalidades offline e pesquisa de filmes por voz",
+        "conceitos_aplicados": "Desenvolvimento em Android Nativo Design e navegação de telas, formulários Persistência de dados e integração com webservices Adaptação a diferentes configurações de dispositivos e orientações de tela",
+        "tecnologias": [
+            "Kotlin",
+            "Android Studio",
+            "GitHub"
+        ],
+        "video_demo": "https://www.youtube.com/watch?v=AoDQt7YvALM"
+    },
+    {
+        "titulo": "Planeamento Celular de Redes sem Fios",
+        "uc": "Redes de Comunicações sem Fios (3A/2S, LEIRT)",
+        "descricao": "Neste projeto é desenvolvida uma aplicação Web que aborda e aplica os conceitos estudados na disciplina A aplicação integra uma apreesntação e caracterização dos principais sistemas sem fios existentes A aplicação apresenta um conjunto de funcionalidades que permitem configurar e analisar aspectos de propagação, antenas, interferencia, planeamento celular e tráfego.",
+        "conceitos_aplicados": "sistemas de comunicações sem fios propagação, antenas interferência e cobertura planeamento celular tráfego",
+        "tecnologias": [
+            "Python e Django, com módulos matplotlib, seaborn, numpy, pandas",
+            "base de dados MySQL",
+            "Cloud Platform as a Service (PaaS) PythonAnywhere",
+            "Repositório GitHub"
+        ],
+        "video_demo": ""
+    },
+    {
+        "titulo": "Análise de Dados de Campanha de Marketing",
+        "uc": "Programação Aplicada para Ciência de Dados (1A/1S, MCD)",
+        "descricao": "O objetivo deste projeto é desenvolver um modelo de resposta para otimizar uma campanha de marketing, visando maximizar o lucro através do aumento das respostas ou da redução de despesas. Utilizando o conjunto de dados fornecido, que contém informações detalhadas sobre os clientes e suas interações anteriores com a empresa, a análise permitirá identificar os fatores mais influentes que levam os clientes a responder a uma oferta de produto ou serviço. Por meio da criação de gráficos e visualizações, o projeto buscará ilustrar aspectos-chave dos dados, como demografia, comportamento de compra e histórico de campanhas, fornecendo insights valiosos que ajudarão a segmentar o público-alvo e personalizar estratégias de marketing para aumentar a eficiência e o retorno sobre o investimento.",
+        "conceitos_aplicados": "Análise de dados Programação em Python, estruturas de dados e algoritmos",
+        "tecnologias": [
+            "Python, matplotlib"
+        ],
+        "video_demo": ""
+    },
+    {
+        "titulo": "Dados Complicados – Universidade do País Das Maravilhas",
+        "uc": "Tópicos em Engenharia de Dados para Ciência de Dados (1A/2S, MCD)",
+        "descricao": "Projeto realizado com elevada interacção com o docente, tentando simular um ambiente real Processar conteúdo para varias fontes de dados (bases de dados, ficheiros de texto)Identificar dados estranhos ou inválidosDescobrir quais os dados para considerar com ajuda do &quot;data scientist&quot; Produzir data frames utilizando técnicas de data science",
+        "conceitos_aplicados": "Bases de Dados Programação Comunicação",
+        "tecnologias": [
+            "SQL / MySQL",
+            "Python, Pandas",
+            "GitHub"
+        ],
+        "video_demo": ""
+    }
+]
