@@ -184,23 +184,3 @@ class Formacao(models.Model):
         verbose_name = 'Formação'
         verbose_name_plural = 'Formações'
 
-
-class MakingOf(models.Model):
-    TIPO_CHOICES = [
-        ('decisao', 'Decisão'), ('erro', 'Erro'),
-        ('correcao', 'Correção'), ('evolucao', 'Evolução'),
-    ]
-    titulo = models.CharField(max_length=200)
-    entidade_relacionada = models.CharField(max_length=200)
-    descricao = models.TextField()
-    fotografia = models.ImageField(upload_to='makingof/', blank=True, null=True)
-    data = models.DateField()
-    tipo = models.CharField(max_length=20, choices=TIPO_CHOICES)
-    uso_ia = models.TextField(blank=True)
-
-    def __str__(self):
-        return self.titulo
-
-    class Meta:
-        verbose_name = 'Making Of'
-        verbose_name_plural = 'Making Of'

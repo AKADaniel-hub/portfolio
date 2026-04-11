@@ -47,3 +47,19 @@ class TFCAdmin(admin.ModelAdmin):
         'tecnologias', 'pdf', 'imagem',
         'classificacao', 'destaque', 'url_repositorio',
     )
+
+
+
+@admin.register(UnidadeCurricular)
+class UnidadeCurricularAdmin(admin.ModelAdmin):
+    list_display = ('nome', 'sigla', 'ano_curricular', 'semestre', 'ects', 'licenciatura', 'ativo')
+    search_fields = ('nome', 'sigla', 'codigo')
+    list_filter = ('ano_curricular', 'semestre', 'ativo', 'licenciatura')
+    filter_horizontal = ('docentes',)
+
+@admin.register(Competencia)
+class CompetenciaAdmin(admin.ModelAdmin):
+    list_display = ('nome', 'tipo', 'nivel')
+    search_fields = ('nome',)
+    list_filter = ('tipo',)
+    filter_horizontal = ('tecnologias', 'projetos')

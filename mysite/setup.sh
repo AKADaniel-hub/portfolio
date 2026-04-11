@@ -21,4 +21,8 @@ python portfolio/load_ucs_projetos_docentes.py
 echo "=== A corrigir Licenciaturas ==="
 python portfolio/fix_licenciaturas.py
 
+
+echo "=== A carregar Competências ==="
+python portfolio/load_competencias.py
+
 echo "=== Tudo pronto! ==="
