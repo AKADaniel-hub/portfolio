@@ -17,7 +17,7 @@
             <ul>
                 {% for curso in aluno.cursos.all %}
                     <li>
-                        <a href="{% url 'curso' curso.id %}">
+                        <a href="{% url 'escola:curso' curso.id %}">
                         {{ curso }}
                         </a>
                     </li>
