@@ -1,0 +1,21 @@
+{% extends 'portfolio/base.html' %}
+{% load accounts_extras %}
+{% block title %}Formações{% endblock %}
+{% block content %}
+<h2>Formações</h2>
+{% if request.user|tem_grupo:'gestor-portfolio' %}
+    <a href="{% url 'portfolio:formacao_criar' %}">+ Nova Formação</a>
+{% endif %}
+{% for f in formacoes %}
+<article>
+    <h3>{{ f.titulo }}</h3>
+    <p>{{ f.instituicao }} | {{ f.get_tipo_display }}</p>
+    <p>{{ f.data_inicio }}{% if f.data_fim %} — {{ f.data_fim }}{% endif %}</p>
+    {% if request.user|tem_grupo:'gestor-portfolio' %}
+        <a href="{% url 'portfolio:formacao_editar' f.id %}">Editar</a>
+        <form method="post" action="{% url 'portfolio:formacao_apagar' f.id %}">{% csrf_token %}<button type="submit">Apagar</button></form>
+    {% endif %}
+</article>
+{% empty %}<p>Nenhuma formação.</p>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'portfolio/base.html' %}
+{% load accounts_extras %}
+{% block title %}Competências{% endblock %}
+{% block content %}
+<h2>Competências</h2>
+{% if request.user|tem_grupo:'gestor-portfolio' %}
+    <a href="{% url 'portfolio:competencia_criar' %}">+ Nova Competência</a>
+{% endif %}
+{% for c in competencias %}
+<article>
+    <h3>{{ c.nome }}</h3>
+    <p>{{ c.get_tipo_display }} | Nível: {{ c.nivel }}/5</p>
+    <p>{{ c.descricao }}</p>
+    {% if request.user|tem_grupo:'gestor-portfolio' %}
+        <a href="{% url 'portfolio:competencia_editar' c.id %}">Editar</a>
+        <form method="post" action="{% url 'portfolio:competencia_apagar' c.id %}">{% csrf_token %}<button type="submit">Apagar</button></form>
+    {% endif %}
+</article>
+{% empty %}<p>Nenhuma competência.</p>
+{% endfor %}
+{% endblock %}

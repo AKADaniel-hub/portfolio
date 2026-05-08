@@ -1,0 +1,12 @@
+{% extends 'portfolio/base.html' %}
+
+{% block content %}
+<h2>Terminar Sessão</h2>
+<p>Tens a certeza que queres sair, <strong>{{ request.user.username }}</strong>?</p>
+
+<form method="post">
+    {% csrf_token %}
+    <button type="submit">Sim, sair</button>
+    <a href="{% url 'portfolio:index' %}">Cancelar</a>
+</form>
+{% endblock %}

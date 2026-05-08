@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Portfolio{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'portfolio/styles.css' %}">
+</head>
+<body>
+
+<header>
+    <h1>O meu Portfolio</h1>
+    <nav>
+        <a href="{% url 'portfolio:index' %}">Início</a>
+        <a href="{% url 'portfolio:projetos' %}">Projetos</a>
+        <a href="{% url 'portfolio:tecnologias' %}">Tecnologias</a>
+        <a href="{% url 'portfolio:ucs' %}">UCs</a>
+        <a href="{% url 'portfolio:competencias' %}">Competências</a>
+        <a href="{% url 'portfolio:formacoes' %}">Formações</a>
+        <a href="{% url 'portfolio:tfcs' %}">TFCs</a>
+        <span class="auth">
+            {% if request.user.is_authenticated %}
+                {{ request.user.username }} |
+                <a href="{% url 'accounts:logout' %}">Sair</a>
+            {% else %}
+                <a href="{% url 'accounts:login' %}">Login</a>
+            {% endif %}
+        </span>
+    </nav>
+</header>
+
+<main>
+    {% block content %}{% endblock %}
+</main>
+
+<footer>
+    <p>Portfolio &copy; 2026</p>
+</footer>
+
+</body>
+</html>

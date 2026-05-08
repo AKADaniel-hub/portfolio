@@ -1,0 +1,17 @@
+{% extends 'portfolio/base.html' %}
+{% load accounts_extras %}
+{% block title %}Unidades Curriculares{% endblock %}
+{% block content %}
+<h2>Unidades Curriculares</h2>
+{% for uc in ucs %}
+<article>
+    <h3>{{ uc.sigla }} - {{ uc.nome }}</h3>
+    <p>{{ uc.ano_curricular }}º Ano | {{ uc.get_semestre_display }} | {{ uc.ects }} ECTS</p>
+    {% if request.user|tem_grupo:'gestor-portfolio' %}
+        <a href="{% url 'portfolio:uc_editar' uc.id %}">Editar</a>
+        <form method="post" action="{% url 'portfolio:uc_apagar' uc.id %}">{% csrf_token %}<button type="submit">Apagar</button></form>
+    {% endif %}
+</article>
+{% empty %}<p>Nenhuma UC.</p>
+{% endfor %}
+{% endblock %}

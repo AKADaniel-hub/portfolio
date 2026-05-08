@@ -1,0 +1,16 @@
+{% extends 'portfolio/base.html' %}
+
+{% block title %}Portfolio{% endblock %}
+
+{% block content %}
+<h2>Bem-vindo ao meu Portfolio</h2>
+
+<nav>
+    <a href="{% url 'portfolio:projetos' %}">Projetos</a>
+    <a href="{% url 'portfolio:tecnologias' %}">Tecnologias</a>
+    <a href="{% url 'portfolio:ucs' %}">Unidades Curriculares</a>
+    <a href="{% url 'portfolio:competencias' %}">Competências</a>
+    <a href="{% url 'portfolio:formacoes' %}">Formações</a>
+    <a href="{% url 'portfolio:tfcs' %}">TFCs</a>
+</nav>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'portfolio/base.html' %}
+{% load accounts_extras %}
+
+{% block title %}Projetos{% endblock %}
+
+{% block content %}
+<h2>Projetos</h2>
+
+{% if request.user|tem_grupo:'gestor-portfolio' %}
+    <a href="{% url 'portfolio:projeto_criar' %}">+ Novo Projeto</a>
+{% endif %}
+
+{% for projeto in projetos %}
+    <article>
+        <h3>{{ projeto.titulo }}</h3>
+        <p>{{ projeto.descricao }}</p>
+
+        {% if request.user|tem_grupo:'gestor-portfolio' %}
+            <a href="{% url 'portfolio:projeto_editar' projeto.id %}">Editar</a>
+            <form method="post" action="{% url 'portfolio:projeto_apagar' projeto.id %}">
+                {% csrf_token %}
+                <button type="submit">Apagar</button>
+            </form>
+        {% endif %}
+    </article>
+{% empty %}
+    <p>Nenhum projeto.</p>
+{% endfor %}
+{% endblock %}

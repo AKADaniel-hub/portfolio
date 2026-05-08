@@ -1,0 +1,30 @@
+{% extends 'portfolio/base.html' %}
+{% load accounts_extras %}
+
+{% block title %}Tecnologias{% endblock %}
+
+{% block content %}
+<h2>Tecnologias</h2>
+
+{% if request.user|tem_grupo:'gestor-portfolio' %}
+    <a href="{% url 'portfolio:tecnologia_criar' %}">+ Nova Tecnologia</a>
+{% endif %}
+
+{% for tec in tecnologias %}
+<article>
+    <h3>{{ tec.nome }}</h3>
+    <p>{{ tec.get_tipo_display }} | Nível: {{ tec.nivel_interesse }}/5</p>
+    <p>{{ tec.descricao }}</p>
+
+    {% if request.user|tem_grupo:'gestor-portfolio' %}
+        <a href="{% url 'portfolio:tecnologia_editar' tec.id %}">Editar</a>
+        <form method="post" action="{% url 'portfolio:tecnologia_apagar' tec.id %}">
+            {% csrf_token %}
+            <button type="submit">Apagar</button>
+        </form>
+    {% endif %}
+</article>
+{% empty %}
+    <p>Nenhuma tecnologia.</p>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,6 @@
+{% extends 'portfolio/base.html' %}
+{% block title %}Nova Formação{% endblock %}
+{% block content %}
+<h2>Nova Formação</h2>
+<form method="post" enctype="multipart/form-data">{% csrf_token %}{{ form.as_p }}<button type="submit">Criar</button><a href="{% url 'portfolio:formacoes' %}">Cancelar</a></form>
+{% endblock %}

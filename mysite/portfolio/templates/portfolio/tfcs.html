@@ -1,0 +1,13 @@
+{% extends 'portfolio/base.html' %}
+{% block title %}TFCs{% endblock %}
+{% block content %}
+<h2>TFCs</h2>
+{% for tfc in tfcs %}
+<article>
+    <h3>{{ tfc.titulo }}</h3>
+    <p>{{ tfc.autor }} | {{ tfc.ano }}</p>
+    <p>{{ tfc.descricao }}</p>
+</article>
+{% empty %}<p>Nenhum TFC.</p>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,6 @@
+{% extends 'portfolio/base.html' %}
+{% block title %}Editar Formação{% endblock %}
+{% block content %}
+<h2>Editar: {{ formacao.titulo }}</h2>
+<form method="post" enctype="multipart/form-data">{% csrf_token %}{{ form.as_p }}<button type="submit">Guardar</button><a href="{% url 'portfolio:formacoes' %}">Cancelar</a></form>
+{% endblock %}

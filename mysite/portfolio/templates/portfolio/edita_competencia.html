@@ -1,0 +1,6 @@
+{% extends 'portfolio/base.html' %}
+{% block title %}Editar Competência{% endblock %}
+{% block content %}
+<h2>Editar: {{ competencia.nome }}</h2>
+<form method="post">{% csrf_token %}{{ form.as_p }}<button type="submit">Guardar</button><a href="{% url 'portfolio:competencias' %}">Cancelar</a></form>
+{% endblock %}
