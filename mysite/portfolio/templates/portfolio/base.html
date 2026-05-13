@@ -19,6 +19,7 @@
         <a href="{% url 'portfolio:competencias' %}">Competências</a>
         <a href="{% url 'portfolio:formacoes' %}">Formações</a>
         <a href="{% url 'portfolio:tfcs' %}">TFCs</a>
+        <a href="{% url 'artigos:artigos' %}">Artigos</a>
         <span class="auth">
             {% if request.user.is_authenticated %}
                 {{ request.user.username }} |

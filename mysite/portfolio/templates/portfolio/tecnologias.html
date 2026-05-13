@@ -12,6 +12,9 @@
 
 {% for tec in tecnologias %}
 <article>
+    {% if tec.logo %}
+        <img src="{{ tec.logo.url }}" alt="{{ tec.nome }}" style="max-height: 80px;">
+    {% endif %}
     <h3>{{ tec.nome }}</h3>
     <p>{{ tec.get_tipo_display }} | Nível: {{ tec.nivel_interesse }}/5</p>
     <p>{{ tec.descricao }}</p>

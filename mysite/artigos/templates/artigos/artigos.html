@@ -1,0 +1,49 @@
+{% extends 'portfolio/base.html' %}
+{% load accounts_extras %}
+
+{% block title %}Artigos{% endblock %}
+
+{% block content %}
+<section>
+    <header>
+        <h2>Artigos</h2>
+        {% if request.user|tem_grupo:'autores' %}
+            <a href="{% url 'artigos:artigo_criar' %}" class="btn-criar">+ Novo Artigo</a>
+        {% endif %}
+    </header>
+
+    {% for artigo in artigos %}
+    <article>
+        <header>
+            <h3><a href="{% url 'artigos:artigo' artigo.id %}">{{ artigo.titulo }}</a></h3>
+            <p>{{ artigo.autor.username }} · {{ artigo.data_criacao|date:"d M Y" }}</p>
+        </header>
+
+        {% if artigo.fotografia %}
+            <img src="{{ artigo.fotografia.url }}" alt="{{ artigo.titulo }}" style="width:100%;border-radius:8px;margin:10px 0;">
+        {% endif %}
+
+        <p>{{ artigo.texto|truncatewords:40 }}</p>
+
+        <section>
+            <ul>
+                <li>👍 {{ artigo.total_likes }} likes</li>
+                <li>💬 {{ artigo.comentarios.count }} comentários</li>
+            </ul>
+        </section>
+
+        <div class="acoes">
+            <a href="{% url 'artigos:artigo' artigo.id %}">Ler mais</a>
+            {% if request.user == artigo.autor %}
+                <a href="{% url 'artigos:artigo_editar' artigo.id %}">Editar</a>
+                <form method="post" action="{% url 'artigos:artigo_apagar' artigo.id %}">
+                    {% csrf_token %}<button type="submit">Apagar</button>
+                </form>
+            {% endif %}
+        </div>
+    </article>
+    {% empty %}
+        <p>Nenhum artigo publicado ainda.</p>
+    {% endfor %}
+</section>
+{% endblock %}

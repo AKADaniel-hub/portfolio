@@ -1,0 +1,64 @@
+{% extends 'portfolio/base.html' %}
+
+{% block title %}{{ artigo.titulo }}{% endblock %}
+
+{% block content %}
+<article>
+    <header>
+        <h2>{{ artigo.titulo }}</h2>
+        <p>{{ artigo.autor.username }} · {{ artigo.data_criacao|date:"d M Y" }}</p>
+    </header>
+
+    {% if artigo.fotografia %}
+        <img src="{{ artigo.fotografia.url }}" alt="{{ artigo.titulo }}" style="width:100%;border-radius:8px;margin:10px 0;">
+    {% endif %}
+
+    <p>{{ artigo.texto|linebreaks }}</p>
+
+    {% if artigo.link_externo %}
+        <p><a href="{{ artigo.link_externo }}" target="_blank">🔗 Link externo</a></p>
+    {% endif %}
+
+    <div class="acoes">
+        <form method="post" action="{% url 'artigos:like' artigo.id %}">
+            {% csrf_token %}
+            <button type="submit">👍 {{ artigo.total_likes }} Likes</button>
+        </form>
+        {% if request.user == artigo.autor %}
+            <a href="{% url 'artigos:artigo_editar' artigo.id %}">Editar</a>
+            <form method="post" action="{% url 'artigos:artigo_apagar' artigo.id %}">
+                {% csrf_token %}<button type="submit">Apagar</button>
+            </form>
+        {% endif %}
+    </div>
+</article>
+
+<section>
+    <h4>Comentários ({{ artigo.comentarios.count }})</h4>
+
+    {% for comentario in artigo.comentarios.all %}
+    <article>
+        <header>
+            <h3>{{ comentario.autor.username }}</h3>
+            <p>{{ comentario.data_criacao|date:"d M Y H:i" }}</p>
+        </header>
+        <p>{{ comentario.texto }}</p>
+    </article>
+    {% empty %}
+        <p>Sem comentários ainda.</p>
+    {% endfor %}
+
+    {% if request.user.is_authenticated %}
+        <h4>Adicionar comentário</h4>
+        <form method="post" class="form-page">
+            {% csrf_token %}
+            {{ comentario_form.as_p }}
+            <button type="submit">Comentar</button>
+        </form>
+    {% else %}
+        <p><a href="{% url 'accounts:login' %}">Inicia sessão</a> para comentar.</p>
+    {% endif %}
+</section>
+
+<a href="{% url 'artigos:artigos' %}">← Voltar aos artigos</a>
+{% endblock %}

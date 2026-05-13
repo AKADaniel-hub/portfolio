@@ -1,0 +1,20 @@
+{% extends 'portfolio/base.html' %}
+
+{% block title %}Link Mágico{% endblock %}
+
+{% block content %}
+<h2>Entrar com Link Mágico</h2>
+<p>Indica o teu email e receberás um link para entrar sem password.</p>
+
+{% if error %}
+    <p style="color:red;">{{ error }}</p>
+{% endif %}
+
+<form method="post" class="form-page">
+    {% csrf_token %}
+    <label>Email: <input type="email" name="email" required autofocus></label>
+    <button type="submit">Enviar link</button>
+</form>
+
+<p><a href="{% url 'accounts:login' %}">← Voltar ao login</a></p>
+{% endblock %}

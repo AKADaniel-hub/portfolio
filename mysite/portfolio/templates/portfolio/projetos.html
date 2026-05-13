@@ -14,6 +14,9 @@
     <article>
         <h3>{{ projeto.titulo }}</h3>
         <p>{{ projeto.descricao }}</p>
+        {% if projeto.imagem %}
+        <img src="{{ projeto.imagem.url }}" alt="{{ projeto.titulo }}" style="width:100%; border-radius:8px; margin-bottom:10px;">
+        {% endif %}
 
         {% if request.user|tem_grupo:'gestor-portfolio' %}
             <a href="{% url 'portfolio:projeto_editar' projeto.id %}">Editar</a>

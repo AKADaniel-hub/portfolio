@@ -52,7 +52,7 @@ class Tecnologia(models.Model):
         ('base_dados', 'Base de Dados'),
         ('outro', 'Outro'),
     ]
-    nome = models.CharField(max_length=100)
+    nome = models.CharField(max_length=150)
     tipo = models.CharField(max_length=20, choices=TIPO_CHOICES, default='outro')
     descricao = models.TextField(blank=True)
     logo = models.ImageField(upload_to='tecnologias/', blank=True, null=True)
@@ -120,8 +120,8 @@ class TFC(models.Model):
     descricao = models.TextField(blank=True)
     ano = models.IntegerField(default=0)
     autor = models.CharField(max_length=200)
-    orientador = models.CharField(max_length=500, blank=True)
-    licenciatura = models.ForeignKey(        # ← adiciona isto
+    orientador = models.TextField(blank=True)
+    licenciatura = models.ForeignKey(        
         Licenciatura, on_delete=models.SET_NULL, null=True, blank=True)
     url_repositorio = models.URLField(blank=True)
     pdf = models.URLField(blank=True)
